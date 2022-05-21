@@ -11,12 +11,23 @@
 <body>
     <style>
         img {
-            min-width: 300px;
-            min-height: 200px;
-            object-fit: fill;
+            aspect-ratio: 4/2.5;
+            min-height: 0px;
+            object-fit: s;
+        }
+        div.blurr {
+            top:0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255,255,255,0);
+            
+            position: absolute;
+        }
+        div.event1 .head{
+            position: relative;
         }
     </style>
-    <div class="main px-7 md:px-32  pt-5 text-[#1e68f9] bg-[#202020]" style="min-height: 100vh;">
+    <div class="main md:px-32  pt-5 text-[#1e68f9] bg-[#202020]" style="min-height: 100vh;">
         <header class="" style="min-height: 10rem;">
         <div class="text-center text-[2.5rem] md:text-[4rem] ">JUGEND FEST 2K22</div>
     </header>
@@ -25,50 +36,68 @@
             <div class="heading p-20 md:text-[3rem]">
                 Events
             </div>
-            <div class="events bg-neutral-800 rounded-3xl py-10 flex flex-row justify-around flex-wrap">
-                <div class="event1 text-center my-5 md:my-20  md:w-[500px] md:h-[325px] w-[300px] md:mx-10 ">
+            <div class="events bg-neutral-800 rounded-3xl py-10  flex flex-row justify-around flex-wrap">
+                <div class="event1 text-center group my-5 md:my-20  px-10 md:mx-10 ">
                     <div class="head">
-                        <img src="./assets/quiz.webp"class="md:w-[500px] md:h-[325px] rounded-2xl" alt="">
+                        <img src="./assets/quiz.webp" class="md:w-[500px] md:h-[325px] rounded-2xl" alt="">
+                        <div class="blurr rounded-2xl md:hover:backdrop-blur-3xl flex justify-center focus:backdrop-blur-sm">
+                            <a class="invisible md:visible opacity-0 translate-y-10 group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-150  text-white p-3 rounded-full self-center h-fit w-fit   bg-blue-600 top-1/2"style="" href="#">View Details</a>
+                        </div>
                     </div>
                     <div class="body">
 
                     </div>
                 </div>
-                <div class="event1 text-center my-5 md:my-20  md:w-[500px] md:h-[325px] w-[300px] md:mx-10 ">
+                <div class="event1 text-center group my-5 md:my-20  px-10 md:mx-10 ">
                     <div class="head">
-                        <img src="./assets/RazzleDazzle.jpg"  class="md:w-[500px] md:h-[325px] rounded-2xl"alt="">
+                        <img src="./assets/RazzleDazzle.jpg" class="md:w-[500px] md:h-[325px] rounded-2xl" alt="">
+                        <div class="blurr rounded-2xl md:hover:backdrop-blur-3xl flex justify-center focus:backdrop-blur-sm">
+                            <a class="invisible md:visible opacity-0 translate-y-10 group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-150  text-white p-3 rounded-full self-center h-fit w-fit   bg-blue-600 top-1/2"style="" href="#">View Details</a>
+                        </div>
                     </div>
                     <div class="body">
 
                     </div>
                 </div>
-                <div class="event1 text-center my-5 md:my-20  md:w-[500px] md:h-[325px] w-[300px] md:mx-10 ">
+                <div class="event1 text-center group my-5 md:my-20  px-10 md:mx-10 ">
                     <div class="head">
-                        <img src="./assets/english.jpg" class="md:w-[500px] md:h-[325px] rounded-2xl"alt="">
+                        <img src="./assets/english.jpg" class="md:w-[500px] md:h-[325px] rounded-2xl" alt="">
+                        <div class="blurr rounded-2xl md:hover:backdrop-blur-3xl flex justify-center focus:backdrop-blur-sm">
+                            <a class="invisible md:visible opacity-0 translate-y-10 group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-150  text-white p-3 rounded-full self-center h-fit w-fit   bg-blue-600 top-1/2"style="" href="#">View Details</a>
+                        </div>
                     </div>
                     <div class="body">
 
                     </div>
                 </div>
-                <div class="event1 text-center my-5 md:my-20  md:w-[500px] md:h-[325px] w-[300px] md:mx-10 ">
+                <div class="event1 text-center group my-5 md:my-20  px-10 md:mx-10 ">
                     <div class="head">
-                        <img src="./assets/team.png" class="md:w-[500px] md:h-[325px] rounded-2xl"alt="">
+                        <img src="./assets/team.png" class="md:w-[500px] md:h-[325px] rounded-2xl" alt="">
+                        <div class="blurr rounded-2xl md:hover:backdrop-blur-3xl flex justify-center focus:backdrop-blur-sm">
+                            <a class="invisible md:visible opacity-0 translate-y-10 group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-150  text-white p-3 rounded-full self-center h-fit w-fit   bg-blue-600 top-1/2"style="" href="#">View Details</a>
+                        </div>
                     </div>
                     <div class="body">
 
                     </div>
                 </div>
-                <div class="event1 text-center my-5 md:my-20  md:w-[500px] md:h-[325px] w-[300px] md:mx-10 ">
+                <div class="event1 text-center group my-5 md:my-20  px-10 md:mx-10 ">
                     <div class="head">
-                        <img src="./assets/VideoEditing.jpg" class="md:w-[500px] md:h-[325px] rounded-2xl"alt="">
+                        <img src="./assets/VideoEditing.jpg" class="md:w-[500px] md:h-[325px] rounded-2xl" alt="">
+                        <div class="blurr rounded-2xl md:hover:backdrop-blur-3xl flex justify-center focus:backdrop-blur-sm">
+                            <a class="invisible md:visible opacity-0 translate-y-10 group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-150  text-white p-3 rounded-full self-center h-fit w-fit   bg-blue-600 top-1/2"style="" href="#">View Details</a>
+                        </div>
                     </div>
                     <div class="body">
 
                     </div>
                 </div>
-                <div class="event1 text-center my-5 md:my-20  md:w-[500px] md:h-[325px] w-[300px] md:mx-10 ">
+                <div class="event1 text-center group my-5 md:my-20  px-10 md:mx-10 ">
                     <div class="head">
-                        <img src="./assets/tamil.webp" class="md:w-[500px] md:h-[325px] rounded-2xl"alt="">
+                        <img src="./assets/tamil.webp" class="md:w-[500px] md:h-[325px] rounded-2xl" alt="">
+                        <div class="blurr rounded-2xl md:hover:backdrop-blur-3xl flex justify-center focus:backdrop-blur-sm">
+                            <a class="invisible md:visible opacity-0 translate-y-10 group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-150  text-white p-3 rounded-full self-center h-fit w-fit   bg-blue-600 top-1/2"style="" href="#">View Details</a>
+                        </div>
                     </div>
                     <div class="body">
 
